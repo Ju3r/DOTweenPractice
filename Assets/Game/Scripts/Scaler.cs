@@ -6,7 +6,7 @@ public class Scaler : MonoBehaviour
     [SerializeField] private float _target = 1.5f;
     [SerializeField] private float _duration = 1f;
 
-    void Start()
+    private void Start()
     {
         transform.DOScale(_target, _duration)
             .SetEase(Ease.InOutSine)
